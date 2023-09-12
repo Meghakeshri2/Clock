@@ -1,0 +1,50 @@
+html{
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10 px;
+
+}
+body{
+    align-items: center;
+    margin: 0%;
+    display: flex;
+    flex: 1;
+    font-size: 2rem;
+    min-height: 100 vh;
+}
+.clockbody{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    position: relative;
+   box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2)
+
+}
+.clock{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateY(-3px); 
+  
+}
+.hand{
+    width: 50% ;
+    top: 50%;
+   height: 6px;
+    background: black;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90 deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.82,-0.13, 0.2, 1.15);
+}
